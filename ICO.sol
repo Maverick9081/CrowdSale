@@ -4,10 +4,10 @@ import "./crowdsale.sol";
 
 contract ICO is Crowdsale {
     
-    uint public currentIcoPhase = 1;
-    uint private preSaleTokens=3;
-    uint private seedSaleTokens =5;
-    uint private finalSaleTokens=2;
+    uint public currentIcoPhase =1;
+    uint private preSaleTokens=3*10**16;
+    uint private seedSaleTokens =5*10**16;
+    uint private finalSaleTokens=2*10**16;
     uint public soldTokens;
 
     constructor(address payable wallet, IERC20 token)  Crowdsale(wallet,token) public {}
